@@ -1,0 +1,300 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Gradient = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Bar = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local OpenMovement = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local OpenCredit = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Speed = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local Options = Instance.new("Frame")
+local OpenSpeed = Instance.new("TextButton")
+local OpenJump = Instance.new("TextButton")
+local Jump = Instance.new("Frame")
+local TextBox_2 = Instance.new("TextBox")
+local TextButton_2 = Instance.new("TextButton")
+local Credit = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Gradient.Name = "Gradient"
+Gradient.Parent = ScreenGui
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient.BorderSizePixel = 0
+Gradient.Position = UDim2.new(0.441212118, 0, 0.102453984, 0)
+Gradient.Size = UDim2.new(0, 632, 0, 494)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+UIGradient.Parent = Gradient
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Gradient
+
+Bar.Name = "Bar"
+Bar.Parent = Gradient
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(-0.000243561182, 0, -0.000784870121, 0)
+Bar.Size = UDim2.new(0, 129, 0, 494)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(29, 96, 252))}
+UIGradient_2.Parent = Bar
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Bar
+
+OpenMovement.Name = "OpenMovement"
+OpenMovement.Parent = Bar
+OpenMovement.BackgroundColor3 = Color3.fromRGB(56, 131, 252)
+OpenMovement.Position = UDim2.new(0.00119326101, 0, 0, 0)
+OpenMovement.Size = UDim2.new(0, 128, 0, 50)
+OpenMovement.Font = Enum.Font.FredokaOne
+OpenMovement.Text = "Movement"
+OpenMovement.TextColor3 = Color3.fromRGB(253, 253, 253)
+OpenMovement.TextScaled = true
+OpenMovement.TextSize = 14.000
+OpenMovement.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+OpenMovement.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = OpenMovement
+
+OpenCredit.Name = "OpenCredit"
+OpenCredit.Parent = Bar
+OpenCredit.BackgroundColor3 = Color3.fromRGB(56, 131, 252)
+OpenCredit.Position = UDim2.new(0.00119326101, 0, 0.101214573, 0)
+OpenCredit.Size = UDim2.new(0, 128, 0, 50)
+OpenCredit.Font = Enum.Font.FredokaOne
+OpenCredit.Text = "Credit"
+OpenCredit.TextColor3 = Color3.fromRGB(253, 253, 253)
+OpenCredit.TextScaled = true
+OpenCredit.TextSize = 14.000
+OpenCredit.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+OpenCredit.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = OpenCredit
+
+Speed.Name = "Speed"
+Speed.Parent = Gradient
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BackgroundTransparency = 1.000
+Speed.Position = UDim2.new(0.202531651, 0, -0.00202429155, 0)
+Speed.Size = UDim2.new(0, 504, 0, 494)
+Speed.Visible = false
+
+TextBox.Parent = Speed
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Size = UDim2.new(0, 504, 0, 378)
+TextBox.Font = Enum.Font.FredokaOne
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "Type your speed then press apply"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextStrokeTransparency = 0.000
+TextBox.TextWrapped = true
+
+TextButton.Parent = Speed
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0, 0, 0.765182137, 0)
+TextButton.Size = UDim2.new(0, 504, 0, 116)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "Apply"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+
+Options.Name = "Options"
+Options.Parent = Gradient
+Options.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Options.BackgroundTransparency = 1.000
+Options.Position = UDim2.new(0.202531651, 0, -0.00202429155, 0)
+Options.Size = UDim2.new(0, 504, 0, 494)
+Options.Visible = false
+
+OpenSpeed.Name = "OpenSpeed"
+OpenSpeed.Parent = Options
+OpenSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenSpeed.BackgroundTransparency = 1.000
+OpenSpeed.Position = UDim2.new(0, 0, 0.00202423334, 0)
+OpenSpeed.Size = UDim2.new(0, 504, 0, 116)
+OpenSpeed.Font = Enum.Font.FredokaOne
+OpenSpeed.Text = "Open Speed"
+OpenSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenSpeed.TextScaled = true
+OpenSpeed.TextSize = 14.000
+OpenSpeed.TextStrokeTransparency = 0.000
+OpenSpeed.TextWrapped = true
+
+OpenJump.Name = "OpenJump"
+OpenJump.Parent = Options
+OpenJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenJump.BackgroundTransparency = 1.000
+OpenJump.Position = UDim2.new(0, 0, 0.236842051, 0)
+OpenJump.Size = UDim2.new(0, 504, 0, 116)
+OpenJump.Font = Enum.Font.FredokaOne
+OpenJump.Text = "Open Jump"
+OpenJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenJump.TextScaled = true
+OpenJump.TextSize = 14.000
+OpenJump.TextStrokeTransparency = 0.000
+OpenJump.TextWrapped = true
+
+Jump.Name = "Jump"
+Jump.Parent = Gradient
+Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jump.BackgroundTransparency = 1.000
+Jump.Position = UDim2.new(0.202531651, 0, -0.00202429155, 0)
+Jump.Size = UDim2.new(0, 504, 0, 494)
+Jump.Visible = false
+
+TextBox_2.Parent = Jump
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 1.000
+TextBox_2.Size = UDim2.new(0, 504, 0, 378)
+TextBox_2.Font = Enum.Font.FredokaOne
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.PlaceholderText = "Type how high you want to jump"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextStrokeTransparency = 0.000
+TextBox_2.TextWrapped = true
+
+TextButton_2.Parent = Jump
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0, 0, 0.765182137, 0)
+TextButton_2.Size = UDim2.new(0, 504, 0, 116)
+TextButton_2.Font = Enum.Font.FredokaOne
+TextButton_2.Text = "Apply"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeTransparency = 0.000
+TextButton_2.TextWrapped = true
+
+Credit.Name = "Credit"
+Credit.Parent = Gradient
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.Position = UDim2.new(0.202531651, 0, -0.00202429155, 0)
+Credit.Size = UDim2.new(0, 504, 0, 494)
+Credit.Visible = false
+
+TextLabel.Parent = Credit
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 504, 0, 494)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "made by ScriptingGod"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function WJUHJK_fake_script() -- OpenMovement.LocalScript 
+	local script = Instance.new('LocalScript', OpenMovement)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Options.Visible = true
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Speed.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Jump.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Credit.Visible = false
+	end)
+	
+end
+coroutine.wrap(WJUHJK_fake_script)()
+local function FYAVPM_fake_script() -- OpenCredit.LocalScript 
+	local script = Instance.new('LocalScript', OpenCredit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Options.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Speed.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Jump.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Credit.Visible = true
+	end)
+	
+end
+coroutine.wrap(FYAVPM_fake_script)()
+local function DLCLMHB_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local walkspeed = script.Parent.Parent.TextBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = walkspeed
+		end
+	end)
+end
+coroutine.wrap(DLCLMHB_fake_script)()
+local function QRGPPL_fake_script() -- OpenSpeed.LocalScript 
+	local script = Instance.new('LocalScript', OpenSpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Options.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Speed.Visible = true
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Jump.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Credit.Visible = false
+	end)
+	
+end
+coroutine.wrap(QRGPPL_fake_script)()
+local function BDLAR_fake_script() -- OpenJump.LocalScript 
+	local script = Instance.new('LocalScript', OpenJump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Options.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Speed.Visible = false
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Jump.Visible = true
+		wait(0.00000000000000000000000)
+		script.Parent.Parent.Parent.Credit.Visible = false
+	end)
+	
+end
+coroutine.wrap(BDLAR_fake_script)()
+local function AXWQDZ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local JumpHeight = script.Parent.Parent.TextBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpHeight = JumpHeight
+		end
+	end)
+end
+coroutine.wrap(AXWQDZ_fake_script)()
